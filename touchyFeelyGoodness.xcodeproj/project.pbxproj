@@ -15,6 +15,7 @@
 		F63CD54D2249D1A300A66C60 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63CD54C2249D1A300A66C60 /* Note.swift */; };
 		F63CD54F2249D1F000A66C60 /* LockStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63CD54E2249D1F000A66C60 /* LockStatus.swift */; };
 		F63CD5512249D23B00A66C60 /* NoteObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63CD5502249D23B00A66C60 /* NoteObjects.swift */; };
+		F63CD5532249D4A300A66C60 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63CD5522249D4A300A66C60 /* NoteCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F63CD54C2249D1A300A66C60 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		F63CD54E2249D1F000A66C60 /* LockStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockStatus.swift; sourceTree = "<group>"; };
 		F63CD5502249D23B00A66C60 /* NoteObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteObjects.swift; sourceTree = "<group>"; };
+		F63CD5522249D4A300A66C60 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		F63CD5482249CF3900A66C60 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F63CD5522249D4A300A66C60 /* NoteCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				F63CD5512249D23B00A66C60 /* NoteObjects.swift in Sources */,
 				F63CD54F2249D1F000A66C60 /* LockStatus.swift in Sources */,
 				F63CD5382249CEBA00A66C60 /* NoteVC.swift in Sources */,
+				F63CD5532249D4A300A66C60 /* NoteCell.swift in Sources */,
 				F63CD5362249CEBA00A66C60 /* AppDelegate.swift in Sources */,
 				F63CD54D2249D1A300A66C60 /* Note.swift in Sources */,
 			);

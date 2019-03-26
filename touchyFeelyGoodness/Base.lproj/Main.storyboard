@@ -18,17 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Dc-ve-Kgp">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Dc-ve-Kgp">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="GIt-h0-CFI">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="noteCell" rowHeight="75" id="GIt-h0-CFI" customClass="NoteCell" customModule="touchyFeelyGoodness" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GIt-h0-CFI" id="Ydp-p9-Jpo">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lockImage" translatesAutoresizingMaskIntoConstraints="NO" id="ZPo-AM-3PQ">
+                                                    <rect key="frame" x="322" y="21" width="30" height="33"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="5B4-OT-r1Q"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiT-Ik-DT1">
+                                                    <rect key="frame" x="35" y="19" width="279" height="53"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ZPo-AM-3PQ" secondAttribute="trailing" constant="8" id="6hY-5N-9ii"/>
+                                                <constraint firstItem="aiT-Ik-DT1" firstAttribute="leading" secondItem="Ydp-p9-Jpo" secondAttribute="leadingMargin" constant="20" id="J7v-Uj-sK4"/>
+                                                <constraint firstItem="aiT-Ik-DT1" firstAttribute="bottom" secondItem="Ydp-p9-Jpo" secondAttribute="bottomMargin" constant="8" id="Pnk-md-wLx"/>
+                                                <constraint firstItem="aiT-Ik-DT1" firstAttribute="top" secondItem="Ydp-p9-Jpo" secondAttribute="topMargin" constant="8" id="meJ-Fy-klM"/>
+                                                <constraint firstItem="ZPo-AM-3PQ" firstAttribute="top" secondItem="Ydp-p9-Jpo" secondAttribute="topMargin" constant="10" id="pzu-jj-mU8"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ZPo-AM-3PQ" secondAttribute="bottom" constant="10" id="sDa-OD-elU"/>
+                                                <constraint firstItem="ZPo-AM-3PQ" firstAttribute="leading" secondItem="aiT-Ik-DT1" secondAttribute="trailing" constant="8" id="uhC-XA-obu"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lockImageView" destination="ZPo-AM-3PQ" id="wCY-D2-lDt"/>
+                                            <outlet property="messageLbl" destination="aiT-Ik-DT1" id="rkL-Aj-KDH"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -64,6 +91,7 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                             <color key="textColor" red="0.91764705882352937" green="0.66274509803921566" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
@@ -77,4 +105,7 @@
             <point key="canvasLocation" x="272.80000000000001" y="-564.46776611694156"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lockImage" width="30" height="30"/>
+    </resources>
 </document>
