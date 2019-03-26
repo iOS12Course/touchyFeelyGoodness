@@ -12,6 +12,9 @@
 		F63CD53B2249CEBA00A66C60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63CD5392249CEBA00A66C60 /* Main.storyboard */; };
 		F63CD53D2249CEBC00A66C60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F63CD53C2249CEBC00A66C60 /* Assets.xcassets */; };
 		F63CD5402249CEBC00A66C60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63CD53E2249CEBC00A66C60 /* LaunchScreen.storyboard */; };
+		F63CD54D2249D1A300A66C60 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63CD54C2249D1A300A66C60 /* Note.swift */; };
+		F63CD54F2249D1F000A66C60 /* LockStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63CD54E2249D1F000A66C60 /* LockStatus.swift */; };
+		F63CD5512249D23B00A66C60 /* NoteObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63CD5502249D23B00A66C60 /* NoteObjects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		F63CD53C2249CEBC00A66C60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F63CD53F2249CEBC00A66C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F63CD5412249CEBC00A66C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F63CD54C2249D1A300A66C60 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		F63CD54E2249D1F000A66C60 /* LockStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockStatus.swift; sourceTree = "<group>"; };
+		F63CD5502249D23B00A66C60 /* NoteObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteObjects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 		F63CD5492249CF3F00A66C60 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F63CD54C2249D1A300A66C60 /* Note.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,6 +100,7 @@
 		F63CD54A2249CF4B00A66C60 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				F63CD54E2249D1F000A66C60 /* LockStatus.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -100,6 +108,7 @@
 		F63CD54B2249CF5200A66C60 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F63CD5502249D23B00A66C60 /* NoteObjects.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -175,8 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F63CD5512249D23B00A66C60 /* NoteObjects.swift in Sources */,
+				F63CD54F2249D1F000A66C60 /* LockStatus.swift in Sources */,
 				F63CD5382249CEBA00A66C60 /* NoteVC.swift in Sources */,
 				F63CD5362249CEBA00A66C60 /* AppDelegate.swift in Sources */,
+				F63CD54D2249D1A300A66C60 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
